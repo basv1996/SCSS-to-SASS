@@ -1,0 +1,47 @@
+body 
+    background-color: $basiskleur*1.4
+
+
+header 
+    nav 
+        margin-bottom: 20px
+        ul 
+            height: $menuHoogte
+            li 
+                width: 100% / $aantalLinkjes
+                display: block
+                float: left
+                border-right: 1px solid black
+                box-sizing: border-box
+                background-color: $navi
+                border-bottom-color: $eersteSteun
+                border-bottom-width: 5px
+            
+            li:hover 
+                background-color: $naviKleur
+                .dropdown 
+                    display: block
+                    position: absolute
+                    width: 100% / $aantalLinkjes
+                
+            
+            .dropdown 
+                display: none
+                li 
+                    clear: left
+                    width: 100%
+                
+            
+        
+    
+
+
+.linkjes 
+    +include border-radius(20px)
+
+
+.hoofdInhoud,
+.linkjes 
+    box-sizing: border-box
+    width: 45%
+    display: inline-block
